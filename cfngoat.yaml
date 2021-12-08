@@ -661,6 +661,8 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-logs"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: True
 
    ########################
    ### Clean S3 Buckets ###
